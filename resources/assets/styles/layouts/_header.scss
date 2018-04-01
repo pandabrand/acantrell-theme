@@ -1,0 +1,42 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.page,
+.archive {
+  .banner {
+    .container {
+      display: flex;
+
+      @extend .justify-content-between;
+
+      .nav-primary {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+
+        .brand {
+          @extend .nav-link;
+
+          padding-left: 0;
+        }
+
+        .navbar-toggler-block {
+          display: block;
+
+          @include media-breakpoint-up(md) {
+            display: none;
+          }
+        }
+
+        .navbar-right {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}

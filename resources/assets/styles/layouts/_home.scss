@@ -1,0 +1,70 @@
+.home {
+  .banner {
+    margin: 15rem auto 4rem;
+
+    .container {
+      flex-direction: column;
+    }
+
+    .brand {
+      @extend .h2;
+      @extend .text-center;
+
+      width: 100%;
+      display: block;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .nav-primary {
+      .menu-top-menu-container {
+        margin-top: 0;
+
+        @include media-breakpoint-up(sm) {
+          margin-top: 1rem;
+        }
+
+        @include media-breakpoint-up(md) {
+          margin-top: 2rem;
+        }
+      }
+
+      .nav {
+        justify-content: center;
+
+        a {
+          padding: 0.5rem;
+
+          @include media-breakpoint-up(sm) {
+            padding: 0.5rem 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  .home-content {
+    padding: 1rem 0.5rem;
+    border-top: 1px solid $border-color;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.05rem;
+  }
+
+  .home-default-image {
+    position: absolute;
+    top: 18rem;
+    left: 0;
+    width: 100vw;
+
+    @include media-breakpoint-up(sm) {
+      position: relative;
+      top: unset;
+      left: unset;
+      width: 60vw;
+      margin: 0 auto -0.5%;
+    }
+  }
+}

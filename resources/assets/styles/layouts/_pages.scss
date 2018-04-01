@@ -1,0 +1,13 @@
+.byline,
+.datetime-entry {
+  margin-bottom: 1rem;
+}
+
+.entry-content,
+.entry-summary {
+  display: flex;
+
+  .entry-image {
+    flex-basis: 75%;
+  }
+}
